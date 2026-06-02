@@ -3,7 +3,7 @@ Gerador de Relatório de Prazos Preclusivos — Versão Web (PAINEL_WEB)
 Documentação: DOCUMENTAÇÃO COMPLETA — RELATÓRIO DE PRAZOS PRECLUSIVOS
 """
 
-import io, re, sys, unicodedata
+import io, re, sys, unicodedatah
 from datetime import date, datetime, timedelta
 from openpyxl.styles.borders import Border, Side
 
@@ -68,19 +68,11 @@ def _feriados_np(anos):
 RESPONSAVEL_MAP = {
     # HELANZIA
     "Wellington Pereira da Rocha Filho":                   "HELANZIA DE ARAUJO XAVIER WICHMANN",
-    "Keliane de Oliveira":                                 "HELANZIA DE ARAUJO XAVIER WICHMANN",
-    "Natalia Paiva de Paula":                              "HELANZIA DE ARAUJO XAVIER WICHMANN",
-    "Gustavo Lopes Alencar Filho":                         "HELANZIA DE ARAUJO XAVIER WICHMANN",
     "Artur Saraiva de Andrade":                            "HELANZIA DE ARAUJO XAVIER WICHMANN",
-    "Victor Emanoel Fradique Accioly Fontenele":           "HELANZIA DE ARAUJO XAVIER WICHMANN",
     "Helanzia de Araujo Xavier Wichmann":                  "HELANZIA DE ARAUJO XAVIER WICHMANN",
     "Helanzia de Araujo Xavier Wichamnn":                  "HELANZIA DE ARAUJO XAVIER WICHMANN",
-    "Roberta Rayanne Vasconcelos Boto":                    "HELANZIA DE ARAUJO XAVIER WICHMANN",
     # LUCIANE
-    "Matheus Cavalcanti de Araujo":                        "LUCIANE MODERNEL MENDES",
-    "Layla Evelyn Nascimento Pinheiro":                    "LUCIANE MODERNEL MENDES",
     "Antonio Eduardo Goes Aguiar Filho":                   "LUCIANE MODERNEL MENDES",
-    "Eduardo Blasques Martine":                            "LUCIANE MODERNEL MENDES",
     "Sane Borges Borgomoni":                               "LUCIANE MODERNEL MENDES",
     "Luciane Modernel Mendes":                             "LUCIANE MODERNEL MENDES",
     "Erika Paula Santos Lima":                             "LUCIANE MODERNEL MENDES",
@@ -99,7 +91,15 @@ RESPONSAVEL_MAP = {
     "Paulo Marcio Soares de Carvalho Filho":               "JENIFFER ROSA BARBOSA DE SALES",
     "Jeniffer Rosa Barbosa de Sales":                      "JENIFFER ROSA BARBOSA DE SALES",
     # JULIANA MIRELLA
+    "Arthur Massari":                                      "JULIANA MIRELLA ALVES RODRIGUES",
+    "Daniel Barros de Oliveira":                           "JULIANA MIRELLA ALVES RODRIGUES",
+    "Gustavo Lopes Alencar Filho":                         "JULIANA MIRELLA ALVES RODRIGUES",
+    "Keliane de Oliveira":                                 "JULIANA MIRELLA ALVES RODRIGUES",
+    "Monique de Karolin Silva da Costa":                   "JULIANA MIRELLA ALVES RODRIGUES",
+    "Natalia Paiva de Paula":                              "JULIANA MIRELLA ALVES RODRIGUES",
+    "Roberta Rayanne Vasconcelos Boto":                    "JULIANA MIRELLA ALVES RODRIGUES",
     "Thallys Anderson Ferreira de Lima":                   "JULIANA MIRELLA ALVES RODRIGUES",
+    "Victor Emanoel Fradique Accioly Fontenele":           "JULIANA MIRELLA ALVES RODRIGUES",
     "Juliana Mirella Alves Rodrigues":                     "JULIANA MIRELLA ALVES RODRIGUES",
     # NAYANDERSON
     "Andre Viana Garrido":                                 "NAYANDERSON LUAN MELLO PINHEIRO",
@@ -114,13 +114,11 @@ RESPONSAVEL_MAP = {
     "Mariana Mota Frota":                                  "MARCELLE LEITE RENTROIA",
     "Marcelle Leite Rentroia":                             "MARCELLE LEITE RENTROIA",
     # SUZANA
-    "Giovanna Campos Pereira":                             "SUZANA MARIA CAMPOS MARANHAO DE LIMA",
-    "Giovanna Cesar Ferreira":                             "SUZANA MARIA CAMPOS MARANHAO DE LIMA",
-    "Daniel Barros de Oliveira":                           "SUZANA MARIA CAMPOS MARANHAO DE LIMA",
-    "Leticia Oliveira da Silva":                           "SUZANA MARIA CAMPOS MARANHAO DE LIMA",
-    "Tatiane Carmo Santa Rosa":                            "SUZANA MARIA CAMPOS MARANHAO DE LIMA",
-    "Francoise Catherine Souza Alves":                     "SUZANA MARIA CAMPOS MARANHAO DE LIMA",
     "Evilany Gabriela Braga Pontes":                       "SUZANA MARIA CAMPOS MARANHAO DE LIMA",
+    "Francoise Catherine Souza Alves":                     "SUZANA MARIA CAMPOS MARANHAO DE LIMA",
+    "Giovanna Campos Pereira":                             "SUZANA MARIA CAMPOS MARANHAO DE LIMA",
+    "Matheus Cavalcanti de Araujo":                        "SUZANA MARIA CAMPOS MARANHAO DE LIMA",
+    "Tatiane Carmo Santa Rosa":                            "SUZANA MARIA CAMPOS MARANHAO DE LIMA",
     "Suzana Maria Campos Maranhao de Lima":                "SUZANA MARIA CAMPOS MARANHAO DE LIMA",
     "Suzana Maria Campos Maranhão de Lima":                "SUZANA MARIA CAMPOS MARANHAO DE LIMA",
     # TICIANNA
@@ -129,7 +127,6 @@ RESPONSAVEL_MAP = {
     "Alexia Alencar Capibaribe":                           "RONALD FEITOSA AGUIAR FILHO",
     "Ronald Feitosa Aguiar Filho":                         "RONALD FEITOSA AGUIAR FILHO",
 }
-
 ORDEM_SUPERVISORES = [
     "GABRIEL GIORGIO CICCHELERO",
     "HELANZIA DE ARAUJO XAVIER WICHMANN",
