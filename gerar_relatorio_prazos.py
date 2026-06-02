@@ -7,7 +7,7 @@ import io, re, sys, unicodedata
 from datetime import date, datetime, timedelta
 from openpyxl.styles.borders import Border, Side
 
-import numpy as nph
+import numpy as np
 import openpyxl
 from openpyxl.styles import PatternFill, Font, Alignment
 from openpyxl.utils import get_column_letter
