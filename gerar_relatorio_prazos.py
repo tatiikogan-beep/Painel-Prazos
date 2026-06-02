@@ -3,7 +3,7 @@ Gerador de Relatório de Prazos Preclusivos — Versão Web (PAINEL_WEB)
 Documentação: DOCUMENTAÇÃO COMPLETA — RELATÓRIO DE PRAZOS PRECLUSIVOS
 """
 
-import io, re, sys, unicodedatah
+import io, re, sys, unicodedata
 from datetime import date, datetime, timedelta
 from openpyxl.styles.borders import Border, Side
 
