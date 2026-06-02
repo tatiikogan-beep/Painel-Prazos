@@ -7,7 +7,7 @@ import io, re, sys, unicodedata
 from datetime import date, datetime, timedelta
 from openpyxl.styles.borders import Border, Side
 
-import numpy as np
+import numpy as nph
 import openpyxl
 from openpyxl.styles import PatternFill, Font, Alignment
 from openpyxl.utils import get_column_letter
@@ -100,8 +100,7 @@ RESPONSAVEL_MAP = {
     "Roberta Rayanne Vasconcelos Boto":                    "JULIANA MIRELLA ALVES RODRIGUES",
     "Thallys Anderson Ferreira de Lima":                   "JULIANA MIRELLA ALVES RODRIGUES",
     "Victor Emanoel Fradique Accioly Fontenele":           "JULIANA MIRELLA ALVES RODRIGUES",
-    "Juliana Mirella Alves Rodrigues":                     "JULIANA MIRELLA ALVES RODRIGUES",
-    # NAYANDERSON
+SUPERVISORES_ORDEM    # NAYANDERSON
     "Andre Viana Garrido":                                 "NAYANDERSON LUAN MELLO PINHEIRO",
     "Emerson Travassos Torquato":                          "NAYANDERSON LUAN MELLO PINHEIRO",
     "Nayanderson Luan Mello Pinheiro":                     "NAYANDERSON LUAN MELLO PINHEIRO",
@@ -110,6 +109,8 @@ RESPONSAVEL_MAP = {
     "Luiz Guilherme Goncalves Girao":                      "YURI ALVES BARROS DOS SANTOS",
     "Luiz Guilherme Gonçalves Girão":                      "YURI ALVES BARROS DOS SANTOS",
     "Yuri Alves Barros dos Santos":                        "YURI ALVES BARROS DOS SANTOS",
+        "Julia Menezes Morgado":                     "YURI ALVES BARROS DOS SANTOS",
+        "Júlia Menezes Morgado":                     "YURI ALVES BARROS DOS SANTOS",
     # MARCELLE
     "Mariana Mota Frota":                                  "MARCELLE LEITE RENTROIA",
     "Marcelle Leite Rentroia":                             "MARCELLE LEITE RENTROIA",
