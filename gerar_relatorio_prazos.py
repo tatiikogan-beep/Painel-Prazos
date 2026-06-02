@@ -100,7 +100,8 @@ RESPONSAVEL_MAP = {
     "Roberta Rayanne Vasconcelos Boto":                    "JULIANA MIRELLA ALVES RODRIGUES",
     "Thallys Anderson Ferreira de Lima":                   "JULIANA MIRELLA ALVES RODRIGUES",
     "Victor Emanoel Fradique Accioly Fontenele":           "JULIANA MIRELLA ALVES RODRIGUES",
-SUPERVISORES_ORDEM    # NAYANDERSON
+    "Juliana Mirella Alves Rodrigues":       "JULIANA MIRELLA ALVES RODRIGUES",
+        # NAYANDERSON
     "Andre Viana Garrido":                                 "NAYANDERSON LUAN MELLO PINHEIRO",
     "Emerson Travassos Torquato":                          "NAYANDERSON LUAN MELLO PINHEIRO",
     "Nayanderson Luan Mello Pinheiro":                     "NAYANDERSON LUAN MELLO PINHEIRO",
